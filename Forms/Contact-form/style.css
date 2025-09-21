@@ -1,0 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    background-color: chartreuse;
+}
+
+fieldset legend {
+    text-align: center;
+}
+
+label{
+    color: black;
+    text-align: center;
+}
+
+form input , form textarea{
+    padding: 6px;
+    font-size: 25px;
+    color: black;
+}
+
+button{
+    padding: 6px 12px;
+    color: black;
+    background-color: orange;
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+button:hover{
+    background-color: brown;
+}

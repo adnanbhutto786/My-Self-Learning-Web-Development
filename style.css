@@ -1,0 +1,187 @@
+nav {
+    background-color: #333;
+    padding: 10px;
+
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+     color: #fff;
+     font-weight: bold;
+     padding: 6px 12px;
+     border-radius: 4px;
+     transition: background-color 0.3s;
+
+}
+nav ul li a:hover {
+    background-color:pink;
+}
+
+h1,h2{
+    font-family: sans-serif;
+}
+
+section{
+    padding: 80px 20px;
+}
+
+/* hero section */
+#hero{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px 20px;
+}
+#hero h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+#hero p{
+    font-size: 1.2rem;
+    font-family: cursive;
+    margin-bottom: 20px;
+    color: #555;
+}
+#hero a{
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+#hero a:hover{
+    background-color: #45a049;
+    color: black;
+}
+
+#about{
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+#about h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+#about p{
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* course */
+#course{
+    padding: 50px;
+    background-color: #fff;
+}  
+#course h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#course ul{
+    list-style-type: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+#course ul li{
+    color:gray;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#contact{
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+#contact h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#contact p{
+    font-family: cursive;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+#contact a {
+    text-decoration: none;
+    color: #45a049;
+    font-weight: bold;
+
+}
+
+#contact a:hover{
+    background-color: aqua;
+    color: black;
+    margin-bottom: 2px;
+}
+
+/* MY bLOGGGGGGGGGGGG */
+#blog{
+    padding: 50px;
+    background-color: aliceblue;
+    text-align: center;
+}
+#blog h2{
+    font-family: cursive;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+#blog p{
+    font-family: sans-serif;
+    color: #333;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+#blog a{
+
+    text-decoration: none;
+    color: #45a049;
+    font-weight: bold;
+    margin-bottom: 2px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#blog a:hover{
+    background-color: aqua;
+    color: black;
+    
+}
+#blog:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+footer{
+    padding: 20x;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+footer p{
+    font-size: 0.9rem;
+    color: blueviolet;
+}

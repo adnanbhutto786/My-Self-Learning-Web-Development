@@ -1,0 +1,31 @@
+/* div{
+    background-color: aqua;
+}
+p{
+    color: chocolate;
+} */
+
+/* #cont > p {
+    background-color: blue;
+}
+                                                           /* Child selctor mean jo direct child ho parent me */
+/* #cont > h1{
+    background-color: aqua;
+} */ 
+
+#cont p ,ul {
+    background-color:red;
+}
+
+#cont ul {
+    list-style-type: none;
+}
+#cont a {
+    text-decoration: none;
+}
+ a:hover{
+    background-color: chartreuse;
+}
+a:active{
+    color: blue;
+}

@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f2f2f2;
+}
+.container{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.container .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+}
+.container:hover .img{
+    filter: blur(5px);
+    transform: scale(1.1);
+}
+.container .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+.container .content h2{
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+.container .content p{
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.container .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4b2b;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.container .content a:hover{
+    background: #ff3a1a;
+    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+}
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .container .content h2 {
+        font-size: 2em;
+    }
+    .container .content p {
+        font-size: 0.9em;
+    }
+}
+@media (max-height: 600px) {
+    .container {
+        height: 400px;
+    }
+}
+@media (max-width: 350px) {
+    .container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+@media (max-width: 300px) {
+    .container .content h2 {
+        font-size: 1.5em;
+    }
+    .container .content p {
+        font-size: 0.8em;
+    }
+    .container .content a {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+@media (max-height: 500px) {
+    .container {
+        height: 350px;
+    }
+}
+@media (max-width: 250px) {
+    .container .content h2 {
+        font-size: 1.2em;
+    }
+    .container .content p {
+        font-size: 0.7em;
+    }
+    .container .content a {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
+@media (max-height: 400px) {
+    .container {
+        height: 300px;
+    }
+}
+@media (max-width: 200px) {
+    .container .content h2 {
+        font-size: 1em;
+    }
+    .container .content p {
+        font-size: 0.6em;
+    }
+    .container .content a {
+        padding: 4px 8px;
+        font-size: 0.7em;
+    }
+}
+@media (max-height: 300px) {
+    .container {
+        height: 250px;
+    }
+}
+@media (max-width: 150px) {
+    .container .content h2 {
+        font-size: 0.8em;
+    }
+    .container .content p {
+        font-size: 0.5em;
+    }
+    .container .content a {
+        padding: 2px 4px;
+        font-size: 0.6em;
+    }
+}
+@media (max-height: 200px) {
+    .container {
+        height: 200px;
+    }
+}
+@media (max-width: 100px) {
+    .container .content h2 {
+        font-size: 0.6em;
+    }
+    .container .content p {
+        font-size: 0.4em;
+    }
+    .container .content a {
+        padding: 1px 2px;
+        font-size: 0.5em;
+    }
+}
+@media (max-height: 150px) {
+    .container {
+        height: 150px;
+    }
+}
+@media (max-width: 50px) {
+    .container .content h2 {
+        font-size: 0.4em;
+    }
+    .container .content p {
+        font-size: 0.3em;
+    }
+    .container .content a {
+        padding: 0.5px 1px;
+        font-size: 0.4em;
+    }
+}
+@media (max-height: 100px) {
+    .container {
+        height: 100px;
+    }
+}
+@media (max-width: 25px) {
+    .container .content h2 {
+        font-size: 0.2em;
+    }
+    .container .content p {
+        font-size: 0.2em;
+    }
+    .container .content a {
+        padding: 0.2px 0.5px;
+        font-size: 0.3em;
+    }
+}
+@media (max-height: 50px) {
+    .container {
+        height: 50px;
+    }
+}
+@media (max-width: 10px) {
+    .container .content h2 {
+        font-size: 0.1em;
+    }
+    .container .content p {
+        font-size: 0.1em;
+    }
+    .container .content a {
+        padding: 0.1px 0.2px;
+        font-size: 0.2em;
+    }
+}
+@media (max-height: 25px) {
+    .container {
+        height: 25px;
+    }
+}
+@media (max-height: 10px) {
+    .container {
+        height: 10px;
+    }
+}
+@media (max-width: 5px) {
+    .container .content h2 {
+        font-size: 0.05em;
+    }
+    .container .content p {
+        font-size: 0.05em;
+    }
+    .container .content a {
+        padding: 0.05px 0.1px;
+        font-size: 0.1em;
+    }
+}
+@media (max-height: 5px) {
+    .container {
+        height: 5px;
+    }
+}
+@media (max-width: 2px) {
+    .container .content h2 {
+        font-size: 0.02em;
+    }
+    .container .content p {
+        font-size: 0.02em;
+    }
+    .container .content a {
+        padding: 0.02px 0.05px;
+        font-size: 0.05em;
+    }
+}
+@media (max-height: 2px) {
+    .container {
+        height: 2px;
+    }
+}
+@media (max-width: 1px) {
+    .container .content h2 {
+        font-size: 0.01em;
+    }
+    .container .content p {
+        font-size: 0.01em;
+    }
+    .container .content a {
+        padding: 0.01px 0.02px;
+        font-size: 0.02em;
+    }
+}
+@media (max-height: 1px) {
+    .container {
+        height: 1px;
+    }
+}
+@media (max-width: 0.5px) {
+    .container .content h2 {
+        font-size: 0.005em;
+    }
+    .container .content p {
+        font-size: 0.005em;
+    }
+    .container .content a {
+        padding: 0.005px 0.01px;
+        font-size: 0.01em;
+    }
+}
+@media (max-height: 0.5px) {
+    .container {
+        height: 0.5px;
+    }
+}
+@media (max-width: 0.1px) {
+    .container .content h2 {
+        font-size: 0.001em;
+    }
+    .container .content p {
+        font-size: 0.001em;
+    }
+    .container .content a {
+        padding: 0.001px 0.002px;
+        font-size: 0.002em;
+    }
+}
+@media (max-height: 0.1px) {
+    .container {
+        height: 0.1px;
+    }
+}
+
+@media (max-width: 0.01px) {
+    .container .content h2 {
+        font-size: 0.0001em;
+    }
+    .container .content p {
+        font-size: 0.0001em;
+    }
+    .container .content a {
+        padding: 0.0001px 0.0002px;
+        font-size: 0.0002em;
+    }
+}
+@media (max-height: 0.01px) {
+    .container {
+        height: 0.01px;
+    }
+}
+@media (max-width: 0.001px) {
+    .container .content h2 {
+        font-size: 0.00001em;
+    }
+    .container .content p {
+        font-size: 0.00001em;
+    }
+    .container .content a {
+        padding: 0.00001px 0.00002px;
+        font-size: 0.00002em;
+    }
+}
+@media (max-height: 0.001px) {
+    .container {
+        height: 0.001px;
+    }
+}
+@media (max-width: 0.0001px) {
+    .container .content h2 {
+        font-size: 0.000001em;
+    }
+    .container .content p {
+        font-size: 0.000001em;
+    }
+    .container .content a {
+        padding: 0.000001px 0.000002px;
+        font-size: 0.000002em;
+    }
+}
+@media (max-height: 0.0001px) {
+    .container {
+        height: 0.0001px;
+    }
+}
+@media (max-width: 0.00001px) {
+    .container .content h2 {
+        font-size: 0.0000001em;
+    }
+    .container .content p {
+        font-size: 0.0000001em;
+    }
+    .container .content a {
+        padding: 0.0000001px 0.0000002px;
+        font-size: 0.0000002em;
+    }
+}
+@media (max-height: 0.00001px) {
+    .container {
+        height: 0.00001px;
+    }
+}
+
+@media (max-width: 0.000001px) {
+    .container .content h2 {
+        font-size: 0.00000001em;
+    }
+    .container .content p {
+        font-size: 0.00000001em;
+    }
+    .container .content a {
+        padding: 0.00000001px 0.00000002px;
+        font-size: 0.00000002em;
+    }
+}
+@media (max-height: 0.000001px) {
+    .container {
+        height: 0.000001px;
+    }
+}
+@media (max-width: 0.0000001px) {
+    .container .content h2 {
+        font-size: 0.000000001em;
+    }
+    .container .content p {
+        font-size: 0.000000001em;
+    }
+    .container .content a {
+        padding: 0.000000001px 0.000000002px;
+        font-size: 0.000000002em;
+    }
+}
+@media (max-height: 0.0000001px) {
+    .container {
+        height: 0.0000001px;
+    }
+}
+@media (max-width: 0.00000001px) {
+    .container .content h2 {
+        font-size: 0.0000000001em;
+    }
+    .container .content p {
+        font-size: 0.0000000001em;
+    }
+    .container .content a {
+        padding: 0.0000000001px 0.0000000002px;
+        font-size: 0.0000000002em;
+    }
+}
+@media (max-height: 0.00000001px) {
+    .container {
+        height: 0.00000001px;
+    }
+}
+@media (max-width: 0.000000001px) {
+    .container .content h2 {
+        font-size: 0.00000000001em;
+    }
+    .container .content p {
+        font-size: 0.00000000001em;
+    }
+    .container .content a {
+        padding: 0.00000000001px 0.00000000002px;
+        font-size: 0.00000000002em;
+    }
+}
+@media (max-height: 0.000000001px) {
+    .container {
+        height: 0.000000001px;
+    }
+}
+
+@media (max-width: 0.0000000001px) {
+    .container .content h2 {
+        font-size: 0.000000000001em;
+    }
+    .container .content p {
+        font-size: 0.000000000001em;
+    }
+    .container .content a {
+        padding: 0.000000000001px 0.000000000002px;
+        font-size: 0.000000000002em;
+    }
+}
+@media (max-height: 0.0000000001px) {
+    .container {
+        height: 0.0000000001px;
+    }
+}
+@media (max-width: 0.00000000001px) {
+    .container .content h2 {
+        font-size: 0.0000000000001em;
+    }
+    .container .content p {
+        font-size: 0.0000000000001em;
+    }
+    .container .content a {
+        padding: 0.0000000000001px 0.0000000000002px;
+        font-size: 0.0000000000002em;
+    }
+}
+@media (max-height: 0.00000000001px) {
+    .container {
+        height: 0.00000000001px;
+    }
+}
