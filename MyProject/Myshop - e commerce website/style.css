@@ -143,3 +143,167 @@ nav{
 .about-text button:hover {
   background: #f4b400;
 }
+.contact{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+}
+.contact h2{
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 26px;
+}
+#contact-section{
+    margin: 0 auto;
+    max-width: 500px;
+    /* background-color: white;
+     */
+     text-align: left;
+     padding: 20px;
+}
+#contact-section label{
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+
+}
+
+#contact-section input,
+#contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#contact-section textarea{
+    min-height: 100px;
+}
+
+#contact-section button{
+    width: 100%;
+    padding: 12px;
+    background-color:#333;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+#contact-section button:hover{
+    background-color: chartreuse;
+}
+#error {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* produdcxt */
+#Products {
+    padding: 40px;
+    text-align: center;
+    background-color: #FAFAFA;
+    /* color: pink; */
+}
+.pro h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    
+
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.project-card{
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+
+}
+.project-card img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    object-fit: fit;
+    border-radius: 6px;
+
+}
+.project-card h3 {
+    margin: 10px 0px;
+
+}
+.project-card p{
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.project-card button{
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    border: none;
+
+}
+
+.project-card button:hover{
+    background-color: orange;
+}
+
+/* footer */
+
+footer{
+    background-color:#222 ;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #fff;
+
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.footer-links a{
+    text-decoration: none;
+    margin: 0px 10px;
+    color: #ddd;
+}
+.footer-links a:hover{
+    color: #27ae60;;
+}
+.footer-socil a {
+    text-decoration: none;
+    margin: 0px 10px;
+    color: #ddd;
+}
+.footer-socil a {
+        color: #27ae60;;
+
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    gap: 10px;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
