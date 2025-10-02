@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - E commerce - website</title>
+    <meta name="description" content="This is E commerce website using html and css and javascript">
+    <meta name="author" content="Adnan Ali Bhutto">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/
+    2867/2867321.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyShop</div>
+            <ul class="nav-links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#product">about</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#cart">cart</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" name="searchInput" id="searchInput" placeholder="Search products.......">
+                <button onclick="searchProduct()">Search</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero section -->
+     <section id="home" class="hero">
+        </div>
+     </section>
+    
+     
+
+     <!-- Product section -->
+    <section id="product">
+        <h2>Our Product</h2>
+        <div class="project-grid">
+            <div class="card">
+                <img src="https://picsum.photos/200/200?random=1" alt="image">
+                <h3>Poduct 1</h3>
+                <p>Price: 500 PKR</p>
+                <button onclick="addToCart('Product 1' , 500)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/200/200?random=2" alt="image">
+                <h3>Product 2</h3>
+                <p>Price: 900 PKR</p>
+                <button onclick="addToCart('Product 2' ,900 )">add to Cart</button>
+            </div>
+             <div class="card">
+                <img src="https://picsum.photos/200/200?random=3" alt="image">
+                <h3>Product 2</h3>
+                <p>Price: 4000 PKR</p>
+                <button onclick="addToCart('Product 3' ,4000 )">add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- cart -->
+     <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <p id="cartTotal">Total: 0 PKR</p>
+     </section>
+
+     <!-- Contact form -->
+      <section id="contact">
+        <h2>Contact us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required role="form">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <label for="message">Message:</label>
+           <textarea name="message" id="message" placeholder="Your Message"></textarea>
+           <button type="submit">Send</button>
+
+        </form>
+        <p id="formMessage"></p>
+      </section>
+
+      <!-- footer section-->
+       <footer>
+        <p>&copy; 2025.All right have reserve.</p>
+        <div class="footer-link">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+        </div>
+        <div class="socil-icons">
+            <a href="#">🌏</a>
+            <a href="#">📘</a>
+            <a href="#">🌏</a>
+
+        </div>
+       </footer>
+
+ <script src="script.js"></script>   
+</body>
+</html>

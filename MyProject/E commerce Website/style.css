@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.nav-links{
+    list-style-type: none;
+
+    display: flex;
+    gap: 25px;
+}
+.nav-links li  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+.nav-links li a:hover{
+    background-color: rgb(217, 136, 78);
+}
+.search-box{
+    display: flex;
+    gap: 10px;
+}
+.search-box input {
+    padding: 5px 10px;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+}
+.search-box button {
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: chocolate;
+    cursor: pointer;
+
+}
+.search-box button:hover{
+    background-color: aqua;
+}
+/* Hero section */
+.hero {
+    background-image: url("https://fastly.picsum.photos/id/985/1200/600.jpg?hmac=d1J-n4KkA0DfRjuwSbkPvhNy-8T245IiiXMIXWcOqdI");
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    background-color: (0, 0, 0, 0.5)
+}
+
+.hero-content{
+     background: rgba(0, 0, 0, 0.5);
+     padding: 20px 40px;
+     border-radius: 10px;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.hero button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+
+}
+.hero button:hover{
+    background-color: chartreuse;
+}
+
+/* product section */
+
+#product {
+    padding: 40px 20px;
+    text-align: center;
+}
+#product h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 50px;
+}
+.card{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    padding: 15px;
+    background-color: #fff;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.card h3 {
+    margin: 10px 0px;
+}
+.card button {
+    background-color: green;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.card button:hover{
+    background-color: darkgreen;
+}
+
+#cart {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd ;
+}
+#cart h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#cardItems {
+    list-style-type: none;
+    padding: 0;
+}
+#cardItems li {
+    padding: 8px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+#cartTotal {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* contact formm */
+
+#contact {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center;
+} */
+    gap: 12px;
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact label{
+    font-weight: bold;
+    text-align: left;
+}
+#contact input,
+#contact textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+
+}
+#contact button {
+    padding: 10px;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;    
+    font-weight: bold;
+    color: white;
+    transition: background 0.3s;
+}
+#contact button:hover{
+    background-color: limegreen;
+}
+
+/* footer  */
+footer {
+
+    background-color: #333;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 30px;
+    color: white;
+}
+footer a {
+    color: yellow;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+footer a:hover{
+    color: orange;
+}
+.socil-icons {
+    margin-top: 10px;
+}
+.socil-icons a {
+    font-size: 1.2rem;
+    margin: 0px 8px;
+}
