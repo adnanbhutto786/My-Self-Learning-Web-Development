@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks landing - page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="shortcut icon" href="./imagess/favicon icon.png.png" type="image/x-icon">
+  </head>
+  <body>
+   <header>
+    <nav>
+        <h1>☕ Starbucks</h1>
+        <ul class="nav-links" id="navlinks">
+        <li><a href="#home">home</a></li>
+        <li><a href="#menu">menu</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>
+        </ul>
+        <div class="humburger" onclick="toggleMenu()">☰</div>
+    </nav>
+   </header> 
+
+   <!-- Main content -->
+    <main>
+        <!-- Hero sectionnnnnn -->
+        <section id="hero">
+            <h2>Enjoy your coffee</h2>
+            <p>Freshly brewed coffee, delivered to your doorsteps ☕</p>
+            <button>Order Now</button>
+        </section>
+
+        <!-- Menu sectionnnnnnn -->
+         <section id="menu">
+            <h2>Our menu</h2>
+            <article>
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with foamy milk.</p>
+            </article>
+            <article>
+                <h3>Latte</h3>
+                <p>Creamy latte with extra shot of love ❤️</p>
+            </article>
+            <article>
+                <h3>Cold brew</h3>
+                <p>Chilled and refreshing.</p>
+            </article>
+         </section>
+         <section id="about">
+            <h2>About Our Coffee Passion</h2>
+            <p>We’ve been serving rich, aromatic coffee with heart and craft since our first roast in 2023.</p>
+         </section>
+         <section id="contact">
+            <h2>Contact us</h2>
+            <form id="contactForm" action="thankyou.html" method="post">
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+            <div id="formStatus"></div>
+         </section>
+    </main>
+    <footer>&copy; 2025 Starbucks Clone | All right reserved.</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
