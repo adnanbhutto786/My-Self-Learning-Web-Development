@@ -36,14 +36,13 @@ img, svg{
     color:#6c757d;
 
 }
-.nav-links {
-    display: flex;
-}
+
 
 .menutoggle {
     color: black;
     font-size: 30px;
     cursor: pointer;
+    display: none;
 }
 .searvh-bar{
     display: flex;
