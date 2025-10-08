@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is E commerce website" />
+    <title>ShopEase - Your Shopping, Inventory & Bill Assistant</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://www.shopeaseapp.com/assets/img/shopeaselogo.svg"
+          alt="logo-image"
+        />
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">home</a></li>
+          <li><a href="#products">products</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menutoggle" id="menutoggle">  ☰</div>
+      </nav>
+      <div class="searvh-bar">
+        <input
+          type="text"
+          name="search-pro"
+          id="search-pro"
+          placeholder="Search..."
+        />
+        <button class="searchbtn">🔎</button>
+        <span class="cart-icon">🛒</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Discover the Best Products</h1>
+          <p>Shop smart. Shop with ease. Get amazing deals every day!</p>
+          <button class="shopBtn">Shop Now</button>
+        </div>
+        <div class="hero-slider">
+          <img src="./images/hero1.webp" alt="shoping banner" class="active" />
+          <img src="./images/hero2.webp" alt="image-2" />
+          <img src="./images/hero3.webp" alt="image-3" />
+        </div>
+      </section>
+
+      <section class="product" id="product">
+        <h2>Featured Product</h2>
+        <!-- searchhh barr -->
+        <div class="searh-product">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search your favrioute product......"
+          />
+          <button>Search🛒</button>
+        </div>
+
+        <div class="product-grid">
+          <div class="card">
+            <img
+              src="https://m.media-amazon.com/images/I/41tE1apYm4L.AC_SX250.jpg"
+              alt=""
+            />
+            <h3>Wireless Headphones</h3>
+            <p>Best sound quality with noise cancellation</p>
+            <span>Rs. 4,500</span>
+            <!--     pricee soan                   -->
+            <button onclick="addToCart('Wireless Headphones', 4500)">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card">
+            <img src="./images/smartwatch2.webp" alt="smart-watch" />
+            <h3>Smart Watch</h3>
+            <p>Track fitness & notifications</p>
+            <span>Rs. 6,200</span>
+            <!--     pricee soan                   -->
+            <button onclick="addToCart('Smart Watch' , 6200)">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card">
+            <img
+              src="./images/bluetouth-speaker.webp"
+              alt="bluetooth-speaker"
+            />
+            <h3>Bluetooth Speaker</h3>
+            <p>High bass portable speake</p>
+            <span>Rs. 3900</span>
+            <!--     pricee soan                   -->
+            <button onclick="addToCart('Bluetooth Speaker' , 3900)">
+              Add to Cart
+            </button>
+          </div>
+          <div class="card">
+            <img src="./images/gaming-mouse.webp" alt="gaming-mouse" />
+            <h3>Gaming Mouse</h3>
+            <p>RGB design with high precision</p>
+            <span>Rs. 2,900</span>
+            <!--     pricee soan                   -->
+            <button onclick="addToCart('Gaming Mouse' , 2900)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- shoping cart displayy  -->
+      <!-- cart section -->
+
+      <section id="cart" class="cart">
+        <h2>🛒 Your Shopining Cart</h2>
+        <ul id="cartItems"></ul>
+        <p id="cartTotal">Total: Rs. 0</p>
+        <button onclick="clearCart()">Clear Cart</button>
+      </section>
+
+      <!-- popup notificationnnn -->
+      <div class="popup" id="popup">💳 Items added to your cart!</div>
+
+      <div id="contact">
+        <h2>📲Contact Us</h2>
+        <form action="#" method="post" id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required role="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Write your message..............."></textarea>
+          </div>
+          <button type="submit" id="submitBtn">Send Message</button>
+          <p id="formMessage"></p>
+        </form>
+      </div>   
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>My Shop</h3>
+          <p>Your one-stop shop for electronics, fashion, and more!</p>
+        </div>
+        <div class="footer-link">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#products">products</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-link">
+          <h4>Follow us</h4>
+          <div class="icons">
+          <a href="#"><img src="./images/social-icons/facebook-app-symbol.png" alt="facebook-icon"></a>
+          <a href="#"><img src="./images/social-icons/instagram.png" alt="instgram-icon"></a>
+          <a href="#"><img src="./images/social-icons/linkedin.png" alt="linkedin-icon"></a>
+          <a href="#"><img src="./images/social-icons/twitter.png" alt="twitter-icon"></a>
+          </div>
+        </div>
+         <p class="footerbottom">
+          &copy; 2025 MyShop. All right reserved.
+        </p>
+
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
