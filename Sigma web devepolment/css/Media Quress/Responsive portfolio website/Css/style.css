@@ -433,7 +433,7 @@ body {
     .form-contact label {
         font-weight: 600;
         font-size: 1.125rem;
-        /* text-align: left; */
+        text-align: left;
         color: #333;
 
     }

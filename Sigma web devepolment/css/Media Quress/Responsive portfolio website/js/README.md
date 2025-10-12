@@ -1,1 +1,1 @@
-https://adnan-ali-portfolio-website.netlify.app/
+https://adnan-ali-portfolio-website.netlify.app/ 
