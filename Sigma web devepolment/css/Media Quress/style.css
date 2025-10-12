@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    background-color: orange;
+}
+/* 
+@media only screen and (max-width: 600px){
+    p{
+        background-color: green;
+        font-size: 1rem;
+        overflow: auton;
+        color: aqua;
+        
+        
+    }
+        yah condition tab chalaa gio jab screen 600px yah es say choti hogiii
+
+    p:hover{
+        text-transform: lowercase;
+        color: pink;
+    }
+} */
+
+@media only screen and (min-width: 300px){
+    p {
+        background-color: lightcoral;
+        color: red;
+    }
+}
