@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium';
+    font-size: 16px;
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+
+    --bg-clr: #000;
+    --txt-clr: #fff;
+    --design-clr :#ccf305;
+    --card-bg: #0e1712;
+}
+body{
+    background-color: var(--bg-clr);
+}
+/* apni class create ki hai
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar {
+    height: 13vh;
+    justify-content: space-between;
+   
+}
+.logo {
+    font-size: 1.5rem;
+    color: var(--design-clr);
+}
+.border-btn {
+    padding: 0.7rem 1.5rem;
+    border:0.1rem solid var(--design-clr);
+    font-weight: bold;
+    color: var(--design-clr);
+    text-transform: uppercase;
+}
+.nav-links{
+    gap:2.5rem ;
+    align-items: center;
+
+}
+
+.link {
+    color: var(--txt-clr);
+}
+ */
+
+ .navbar{
+    width: 100%;
+    padding: 80px 10%;
+ }

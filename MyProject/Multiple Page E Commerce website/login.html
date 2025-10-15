@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is fully e commerce website user first in login and signup"
+    />
+    <meta name="authot" content="Adnan Ali Bhutto" />
+    <meta name="kewords" content="Html and css and javascript" />
+    <title>Login - MyStore - E Commerce - Website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=
+    "
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Login  Sectionnnn -->
+
+    <main class="main-content">
+      <section class="auth-section">
+        <div class="auth-container">
+          <h2>Welcome back</h2>
+          <p>Login to your account to continue shipping.</p>
+
+          <form action="#" method="get" id="formLogin" class="auth-form">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="logInEmail"
+                id="logInEmail"
+                placeholder="Enter your email"
+                required
+              />
+              <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="loginPassword"
+                id="loginPassword"
+                placeholder="Enter your password"
+                required
+              />
+              <small class="error" id="passwordError"></small>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <p class="form-footer">
+              Don't have an account? <a href="signup.html">Create one</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer sectionnnn -->
+
+    <script src="./js/auth.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
