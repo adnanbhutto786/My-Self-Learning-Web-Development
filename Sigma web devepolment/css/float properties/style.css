@@ -1,0 +1,38 @@
+/* .box:first-child{
+        background-color: red;
+      }
+      .box::first-line{
+        color: yellow;
+      } */
+
+      .boxes *{
+        border: 2px solid black;
+      }
+     p, a , [data-color="primary"]{
+        margin-top: 50px;
+        padding: 20px;
+      }
+
+      .box:nth-child(even){
+        color: red;
+      }
+
+      /* nth last child nicha km kara gii */
+
+      .box:nth-last-child(6){          
+        text-align: center;
+      }
+
+      /* befor main content say pahlaa insert karegaaaaaaa */
+      .boxes::before {
+        content: "Welcome to your website";
+        color: blue;
+      }
+
+
+      /* MAin conetent say pahlaa inserttt kartaa haii */
+
+      .boxes::after{
+        content: "Adnan ali bhutto";
+        color: orange;
+      }
