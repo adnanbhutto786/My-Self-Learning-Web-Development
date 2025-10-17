@@ -1,0 +1,20 @@
+/* body {
+    background: #ff0000;
+} */
+
+
+.container {
+
+    border: 2px solid black;
+    display: grid;
+    /* grid-template-columns: 1fr 4fr 1fr; */
+    gap: 10px;
+    grid-template-columns: repeat(2 , 1fr);
+
+}
+
+.items {
+    border: 1px solid orange;
+    height: 100px;
+    width: 100px;
+}
