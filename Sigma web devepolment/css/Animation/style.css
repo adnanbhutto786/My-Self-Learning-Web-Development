@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70vw;
+    height: 80vh;
+    /* background-color: blue; */
+    border: 2px solid black;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    /* animation: adnan-2  3s 0.5s 1 infinite  1; */
+
+    animation: adnan-ki-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 3 ;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-play-state:running;
+    
+}    
+
+/* 
+@keyframes  adnan-ki-animation {
+    from {
+        background-color: red;
+
+    }
+    to {
+        transform: translateX(1000px);
+    }
+    
+}  */
+
+@keyframes adnan-ki-animation {
+    0% {
+        transform: rotate(0deg);
+        background-color: orange;
+    }
+    30% {
+        transform: rotate(40deg);
+        background-color: red;
+    }
+    60% {
+        transform: rotate(90deg);
+        background-color: green;
+    }
+    80% {
+        transform: rotate(180deg);
+        background-color: blue;
+    }
+    100% {
+        transform: rotate(360deg) scale(1.5);
+        background-color: purple;
+    }
+}

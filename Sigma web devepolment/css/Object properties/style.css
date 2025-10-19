@@ -1,0 +1,35 @@
+/* 
+
+.container {
+    height: 300px;
+    width:  300px ;
+    border: 2px solid orange;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    /* object-position: top right; */
+/* }  */
+
+/* Css filterssssss */
+
+
+.container {
+    height: 300px;
+    width:  300px ;
+    border: 2px solid orange;
+    /* object-fit: cover; */
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    filter: blur(1px);
+    filter: brightness(40px );
+    filter: contrast(40px);
+    /* object-position: top right; */
+ } 
+
