@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-size: 22px;
+}
+
+.main-header {
+  background-image: url("./assets/images/bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* width: 100vw; */
+  background-position: center;
+  color: white;
+  position: relative;
+  object-fit: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+  /* margin: 0px 40px; */
+  padding: 20px 50px;
+}
+
+.logo img {
+  height: 140px; 
+  width: 140px; 
+  
+
+}
+.sign   {
+    margin-bottom: 90px;
+}
+
+.login-btn  {
+  text-decoration: none;
+  background-color: rgb(229, 9, 20);
+  padding: 8px 14px;
+  /* font-weight: bold; */
+  color: white;
+  font-size: 15px;
+  
+}
+
+.main-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  z-index: 1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  padding: 0px 30px 30px 30px;
+}
+
+.about-content {
+        margin-top: 40px;
+}
+
+.about-content h3 {
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(255 255 255);
+
+}
+
+.about-content p {
+  font-size: 15px;
+  color: rgb(255 255 255);
+  margin-bottom: 20px;
+}
+.about-content .ready-content {
+  font-size: 15px;
+  color: rgb(255 255 255);
+  margin-bottom: 40px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.search-bar input {
+  /* text-align: center; */
+  padding: 12px 22px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 360px;
+  height: 49px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: white;
+
+}
+.search-bar input::placeholder {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    transition: 0.3 ease all;
+    color: #aaa;
+
+}
+
+
+.search-bar input:focus {
+  outline-color: rgb(255 255 255);
+  border-color: #fff;
+
+
+}
+
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: rgb(229, 9, 20);
+  color: rgb(255 255 255);
+  height: 50px;
+  width: 168px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.search-bar  button:hover {
+    background-color: rgb(166 48 54);
+}
+
+.get-start img {
+  width: 15px;
+  height: 12px;
+  margin-top: 1px;
+  font-weight: bold;
+  
+  
+}
+
+
+/* Treningggg */
+
+.trending {
+    background-color: #000000;
+    padding: 80px 08%;
+    height: 100%;
+    margin: auto;
+}
+.trending-container h3 {
+    font-size: 25px;
+    color: rgb(255 255 255);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.trending-container img {
+    padding: 30px;
+    /* display: grid; */
+    /* grid-template-columns: repeat( ); */
+    gap: 40px;
+    
+}
+
+.more-reson {
+    padding: 80px 10%;
+    background-color: #000000;
+    margin: auto;
+    
+}
+
+.more-container {
+     display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(230px , 1fr));
+    gap: 40px;
+
+}
+
+.more-reson h2 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px
+}
+ 
+.more-card{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1f111e;
+    padding: 35px;
+}
+
+.more-card p ,h3{
+
+    color: white;
+    margin-bottom: 10px;
+
+}
+.more-card h3 {
+    font-size: 18px;
+
+}
+
+.more-card p {
+    font-size: 15px;
+}
+.more-card img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 180px;
+    top: 30px;
+    background-color: rgb(148 34 118);
+}
+
+
+/* buttton styling */
+
+.asked{
+    background-color: #000;
+    padding: 80px 5%;
+    margin: auto;
+}
+.asked h2 {
+    font-size: 22px;
+    color: #fff;
+}
+
+.container-button {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 30px;
+    gap: 10px;
+}
+.container-button button {
+    background-color: rgb(45 45 45);
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    padding: 21px;
+    font-size: 15px;
+    border: none;
+}
+
+.container-button button:hover {
+    background-color: #414141;
+}
+
+.container-button button svg {
+    float: right;
+}
+.search-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.Ready-to-watch h3 {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Ready-to-watch input {
+    max-width: 100%;
+    width: 500px;
+    padding: 10px;
+    background-color: rgb(15 15 15);
+    color: #fff;
+}
+.Ready-to-watch input:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.Ready-to-watch button {
+    background-color: rgb(229 9 20);
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+
+}
+.Ready-to-watch button:hover {
+    background-color: #c11119;
+
+}
+
+/* footer sectionn */
+
+footer {
+    background-color: rgb(0 0 0);
+}
+.footer-section {
+    padding: 80px 5%;
+    display: block;
+    overflow: hidden;
+
+}
+
+.question a {
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 50px;
+    
+
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column a {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+}
+
+#LanguageSelect {
+    padding: 6px 20px;
+    background-color: rgb(15 15 15);
+    color: rgb(243 243 243);
+    font-size: 15px;
+    margin-bottom: 30px;
+    
+}
+
+#LanguageSelect input:focus{
+    outline:none;
+    border-color:rgb(243 243 243) ;
+    
+}
+
+.Netflix-pak p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 30px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 90px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+    
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  font-size: 13px;
+  color: rgb(68,142,244);
+}
