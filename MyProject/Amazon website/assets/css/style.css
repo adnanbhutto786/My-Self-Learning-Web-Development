@@ -322,3 +322,50 @@ body {
     width: 150px;
     height: 150px;
 }
+
+/*  panel 1 */
+
+.international-panel {
+    background-color:#e3e6e6;
+    height: auto;
+    width: 100%;
+   
+}
+
+.international-img{
+    width: 100%;
+    padding: 10px 20px;
+
+}
+.international-img img {
+    width:210px ;
+    height: 200px;
+    object-fit: contain;
+}
+
+    
+
+.international-content{
+    background-color:#fff;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding:20px;
+    margin: 4px;
+    width: 90%;
+    margin: auto;
+    height: 261px;
+
+}
+
+
+.international-content h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0f1111;
+    margin-bottom: 20px;
+}
+
+
+
+
