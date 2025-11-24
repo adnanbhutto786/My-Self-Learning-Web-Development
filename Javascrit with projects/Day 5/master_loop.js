@@ -171,6 +171,40 @@ for  ( let i = 1 ; i <=n ; i++){
 console.log("Factorial" , fact);
 
 
+for ( let i = 1 ; i <= 10 ; i++){
+   console.log(i);
+   
+}
+
+for ( let i = 2 ; i <=50 ; i +=2){
+   console.log(i);
+   
+}
+
+
+for ( let i = 1 ; i <=50 ; i +=2){
+   console.log(i);
+
+}
+
+let ari = [ 45 , 34 , 54 ,98 , 343 , 543]
+let largeNumber = 0
+
+for ( let i = 1 ; i < ari.largeNumber ; i++){
+   if ( arr[i] < largeNumber) largeNumber
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
       
 
